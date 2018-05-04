@@ -7,6 +7,8 @@
 
     python diff.py from.sql to.sql
 
+以上命令生成表结构更新语句，把`to.sql`中的表结构更新的和`from.sql`一样
+
 **注意：** 两份sql文件必须是由mysqldump命令导出的，mysqldump命令只导出表结构的方法是：
 
 	mysqldump -uroot -proot --lock-tables=FALSE -d <database_name>
